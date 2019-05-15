@@ -4,3 +4,7 @@
 <% 100.times do |num| %>
 <%= num %>
 <% end %>
+<ul>
+    <li><%= link_to "Quienes Somos", :controller => "home", :action => "who_are_we" %></li>
+    <li><%= link_to "Contacto", :controller => "home", :action => "contact" %></li>
+</ul>
