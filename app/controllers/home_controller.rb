@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
+  layout "application", :except=> :contact  
+
   def index
     @title = "Hello everyone this is our home page"
     redirect_to :action => :who_are_we, :id => ["Nahum" , "Perez", "Fernadez"]
