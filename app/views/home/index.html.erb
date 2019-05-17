@@ -7,4 +7,5 @@
 <ul>
     <li><%= link_to "Quienes Somos", :controller => "home", :action => "who_are_we" %></li>
     <li><%= link_to "Contacto", :controller => "home", :action => "contact" %></li>
+    <li><%= mail_to "nahum.poar@gmail.com", "Correo", :subject => "Hello" %>  </li>
 </ul>
