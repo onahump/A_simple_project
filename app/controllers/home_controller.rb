@@ -14,6 +14,12 @@ class HomeController < ApplicationController
   end
 
   def contact
-    @title = "This is a contact page"
+    if request.get?
+      @title = "This is a contact page"
+    else
+      @title = "This is a contact page- POST -#{params[:id]}"
+    end
+
+    
   end
 end
