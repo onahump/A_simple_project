@@ -17,6 +17,9 @@
 !/log/.keep
 !/tmp/.keep
 
+#Ignoring images
+/app/assets/images/
+
 # Ignore uploaded files in development
 /storage/*
 !/storage/.keep
