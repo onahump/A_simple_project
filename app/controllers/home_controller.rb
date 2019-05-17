@@ -18,8 +18,11 @@ class HomeController < ApplicationController
       @title = "This is a contact page"
     else
       @title = "This is a contact page- POST -#{params[:id]}"
-    end
-
-    
+    end    
   end
+
+  def services
+    @site_parameter = params[:id]
+  end
+  
 end
